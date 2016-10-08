@@ -11,5 +11,9 @@ angular.module("vendas").config(function ($routeProvider) {
 		templateUrl: "cliente.html",
 		controller: "clienteCtrl"
 	});
+	$routeProvider.when("/lista_cliente", {
+		templateUrl: "lista_cliente.html",
+		controller: "listaClienteCtrl"
+	});
 	$routeProvider.otherwise({redirectTo: "/produto"});
 });

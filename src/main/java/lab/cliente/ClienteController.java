@@ -30,4 +30,9 @@ public class ClienteController {
   public Cliente novo(@RequestBody Cliente cliente) {
     return clienteService.registrarCliente(cliente);
   }
+  
+  @RequestMapping(value = "/remove", method = POST)
+  public void remove(@RequestBody Cliente cliente) {
+	  clienteService.removeCliente(cliente);
+  }
 }
