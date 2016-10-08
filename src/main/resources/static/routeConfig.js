@@ -3,6 +3,10 @@ angular.module("vendas").config(function ($routeProvider) {
 		templateUrl: "produto.html",
 		controller: "produtoCtrl"
 	});
+	$routeProvider.when("/lista_produto", {
+		templateUrl: "lista_produto.html",
+		controller: "listaProdutoCtrl"
+	});
 	$routeProvider.when("/cliente", {
 		templateUrl: "cliente.html",
 		controller: "clienteCtrl"

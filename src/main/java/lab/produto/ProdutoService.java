@@ -58,4 +58,8 @@ public class ProdutoService {
   public Iterable<Produto> obterTodos() {
     return produtoRepository.findAll();
   }
+  
+  public void removeProduto(Produto produto) {
+	  produtoRepository.delete(produto);
+  }
 }

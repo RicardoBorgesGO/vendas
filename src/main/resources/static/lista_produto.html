@@ -1,0 +1,34 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col s12 m12">
+			<div class="card">
+				<div class="card-content">
+					<span class="card-title">Produtos</span>
+					<table ng-show="produtos.length">
+						<thead>
+							<tr>
+								<th data-field="id">Código</th>
+								<th data-field="name">Nome</th>
+								<th data-field="type">Tipo</th>
+								<th data-field="quantidade">Quantidade</th>
+								<th data-field="operation">Operação</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr ng-repeat="produto in produtos">
+								<td>{{produto.codigo}}</td>
+								<td>{{produto.nome}}</td>
+								<td>{{produto.tipo}}</td>
+								<td>{{produto.quantidade}}</td>
+								<td><a href="#/lista_produto" ng-click="removeProduto(produto)"><i class="material-icons">delete</i></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Container -->
